@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ChoiceActivity">
+
+        <LinearLayout
+            android:id="@+id/llModel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FF5722"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAr"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ar"
+                app:layout_constraintBottom_toTopOf="@+id/ivChromaVid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:text="@string/_3d_model_sample"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/ivAr"
+                app:layout_constraintStart_toStartOf="@+id/ivAr"
+                app:layout_constraintTop_toBottomOf="@+id/ivAr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChroma"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivChromaVid"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/chroma_vid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAr"
+                app:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvChroma"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="@string/chroma_video_sample"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/ivAr"
+                app:layout_constraintStart_toStartOf="@+id/ivChromaVid"
+                app:layout_constraintTop_toBottomOf="@+id/ivChromaVid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVideo360"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivVideo360"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_360"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAr" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvVideo360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_360_sample"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/ivAr"
+                app:layout_constraintStart_toStartOf="@+id/ivChromaVid"
+                app:layout_constraintTop_toBottomOf="@+id/ivChromaVid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llImage360"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#E91E63"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImage360"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_360"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAr"
+               />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvImage360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_360_sample"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/ivAr"
+                app:layout_constraintStart_toStartOf="@+id/ivChromaVid"
+                app:layout_constraintTop_toBottomOf="@+id/ivChromaVid" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
